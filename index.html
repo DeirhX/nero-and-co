@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nero &amp; Co. — After Dark</title>
+  <meta name="description" content="Nero & Co. after dark. One screen, no pages, no reloads — a living room where we design websites with a soul." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="night.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌙%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <div class="stage" id="stage" data-scene="0">
+
+    <!-- ambient -->
+    <div class="fireflies" id="fireflies" aria-hidden="true"></div>
+    <div class="glow" id="glow" aria-hidden="true"></div>
+    <div class="moon" aria-hidden="true"></div>
+
+    <!-- persistent brand -->
+    <div class="brand">
+      <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true">
+        <path d="M10 30 L7 10 L20 20 Z" fill="currentColor"/>
+        <path d="M38 30 L41 10 L28 20 Z" fill="currentColor"/>
+        <ellipse cx="24" cy="30" rx="17" ry="15" fill="currentColor"/>
+        <circle cx="17.5" cy="28" r="2.6" fill="var(--night)"/>
+        <circle cx="30.5" cy="28" r="2.6" fill="var(--night)"/>
+        <path d="M22 35 L26 35 L24 37.5 Z" fill="var(--accent)"/>
+      </svg>
+      <span>Nero <em>&amp;</em> Co.</span>
+      <span class="brand__tag">after dark</span>
+    </div>
+
+    <!-- persistent Nero -->
+    <div class="cat" id="catWrap">
+      <div class="bubble" id="bubble" role="status">mrrp!</div>
+      <svg id="nero" class="nero" viewBox="0 0 400 430" aria-label="Nero the tuxedo cat, on the night shift. Click him.">
+        <path class="nero__tail" d="M300 350 Q385 330 372 245 Q366 208 340 200 Q368 215 370 250 Q376 325 298 366 Z" fill="var(--ink)"/>
+        <circle class="nero__tailtip" cx="341" cy="203" r="13" fill="#efe9dc"/>
+        <ellipse cx="200" cy="315" rx="112" ry="98" fill="var(--ink)"/>
+        <path d="M200 240 Q252 265 245 340 Q240 400 200 405 Q160 400 155 340 Q148 265 200 240 Z" fill="#efe9dc"/>
+        <ellipse cx="168" cy="400" rx="27" ry="15" fill="#efe9dc"/>
+        <ellipse cx="232" cy="400" rx="27" ry="15" fill="#efe9dc"/>
+        <path class="nero__ear nero__ear--l" d="M122 108 L96 22 L182 66 Z" fill="var(--ink)"/>
+        <path class="nero__ear nero__ear--r" d="M278 108 L304 22 L218 66 Z" fill="var(--ink)"/>
+        <path d="M126 94 L110 42 L162 70 Z" fill="var(--pink)"/>
+        <path d="M274 94 L290 42 L238 70 Z" fill="var(--pink)"/>
+        <ellipse cx="200" cy="150" rx="97" ry="88" fill="var(--ink)"/>
+        <ellipse cx="200" cy="195" rx="50" ry="36" fill="#efe9dc"/>
+        <g class="nero__eye" data-eye>
+          <ellipse class="nero__iris" cx="158" cy="142" rx="23" ry="25" fill="var(--accent)"/>
+          <g class="nero__pupil" data-pupil>
+            <ellipse cx="158" cy="144" rx="8.5" ry="15" fill="var(--night)"/>
+            <circle cx="161" cy="137" r="3.4" fill="#fff"/>
+          </g>
+        </g>
+        <g class="nero__eye" data-eye>
+          <ellipse class="nero__iris" cx="242" cy="142" rx="23" ry="25" fill="var(--accent)"/>
+          <g class="nero__pupil" data-pupil>
+            <ellipse cx="242" cy="144" rx="8.5" ry="15" fill="var(--night)"/>
+            <circle cx="245" cy="137" r="3.4" fill="#fff"/>
+          </g>
+        </g>
+        <path d="M191 182 L209 182 L200 193 Z" fill="var(--pink)"/>
+        <path d="M200 193 Q200 202 190 204 M200 193 Q200 202 210 204" stroke="var(--night)" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+        <g class="nero__whiskers" stroke="#5e5a52" stroke-width="2.4" stroke-linecap="round">
+          <path d="M156 190 Q112 182 84 168" fill="none"/>
+          <path d="M156 199 Q110 200 80 196" fill="none"/>
+          <path d="M244 190 Q288 182 316 168" fill="none"/>
+          <path d="M244 199 Q290 200 320 196" fill="none"/>
+        </g>
+        <!-- bowtie: only for the contact scene -->
+        <g class="nero__bowtie">
+          <path d="M200 246 L168 230 L168 262 Z" fill="var(--pink)"/>
+          <path d="M200 246 L232 230 L232 262 Z" fill="var(--pink)"/>
+          <circle cx="200" cy="246" r="7" fill="var(--accent)"/>
+        </g>
+      </svg>
+    </div>
+
+    <!-- ================= SCENES ================= -->
+
+    <section class="scene is-active" data-title="Hello">
+      <div class="scene__box scene__box--intro">
+        <p class="eyebrow"><span class="eyebrow__dot"></span> Nero &amp; Co. — the night shift</p>
+        <h1>We design websites<br/>with a <span class="glowword">soul</span>.</h1>
+        <p class="lead">Any kind of website — dreamed up by day, polished by night.
+        Welcome to the studio after closing time: quiet, glowing, and very much awake.</p>
+        <p class="hint">scroll, swipe or press <kbd>↓</kbd> — one room, no pages, no reloads</p>
+      </div>
+    </section>
+
+    <section class="scene" data-title="What we do">
+      <div class="scene__box">
+        <p class="eyebrow"><span class="eyebrow__dot"></span> What we do</p>
+        <h2>Any kind of web. <span class="glowword">Really.</span></h2>
+        <div class="minis">
+          <div class="mini"><span>🏠</span><h3>Business sites</h3><p>First impressions that land on their feet.</p></div>
+          <div class="mini"><span>🛒</span><h3>E-commerce</h3><p>Shops that sell while you nap.</p></div>
+          <div class="mini"><span>📅</span><h3>Booking systems</h3><p>Calendars, forms, confirmations.</p></div>
+          <div class="mini"><span>🎨</span><h3>Portfolios</h3><p>Your work, groomed to perfection.</p></div>
+          <div class="mini"><span>🩹</span><h3>Rescues</h3><p>We adopt neglected websites.</p></div>
+          <div class="mini"><span>🫶</span><h3>Care</h3><p>Check-ups long after launch.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene" data-title="Shapeshift">
+      <div class="scene__box scene__box--show">
+        <p class="eyebrow"><span class="eyebrow__dot"></span> One studio, every style</p>
+        <h2>Give our styles a <span class="glowword">spin</span>.</h2>
+
+        <div class="carousel" id="carousel">
+          <button class="car-arrow car-arrow--prev" id="carPrev" aria-label="Previous style">‹</button>
+          <div class="car-track" id="carTrack"></div>
+          <button class="car-arrow car-arrow--next" id="carNext" aria-label="Next style">›</button>
+        </div>
+
+        <div class="show__caption">
+          <p id="showLabel"><strong>The corner bakery</strong> — warm, buttery, irresistible</p>
+          <button class="chip" id="nextStyle">spin it ✨</button>
+        </div>
+        <p class="show__drag">drag, flick, grab a neighbour, use <kbd>←</kbd> <kbd>→</kbd> — or just watch it turn</p>
+      </div>
+    </section>
+
+    <section class="scene" data-title="Recent work">
+      <div class="scene__box">
+        <p class="eyebrow"><span class="eyebrow__dot"></span> Fresh from the litter</p>
+        <h2>Recent work</h2>
+        <div class="feature">
+          <div class="feature__card">
+            <span class="feature__emoji">🎾</span>
+            <div>
+              <h3>Open Tennis Academy — TK Neridé</h3>
+              <p>Full site for a Prague tennis academy: three venues, programs, camps,
+              and a custom court-reservation system.</p>
+              <button class="chip" data-copy="https://neride.netlify.app">
+                neride.netlify.app <span class="chip__hint">tap to copy</span>
+              </button>
+            </div>
+          </div>
+          <div class="feature__card feature__card--slot">
+            <span class="feature__emoji">🐾</span>
+            <div>
+              <h3>Your project</h3>
+              <p>This spot is reserved. Whatever you're building, it belongs here.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene" data-title="The team">
+      <div class="scene__box">
+        <p class="eyebrow"><span class="eyebrow__dot"></span> A studio of two</p>
+        <h2>The night crew</h2>
+        <div class="crew">
+          <div class="crew__card">
+            <span class="crew__emoji">☕</span>
+            <h3>The Human</h3>
+            <p class="crew__role">design · code · coffee</p>
+            <p>Designs it, builds it, ships it. Answers emails suspiciously fast, even at this hour.</p>
+          </div>
+          <div class="crew__card">
+            <span class="crew__emoji">🌙</span>
+            <h3>Nero</h3>
+            <p class="crew__role">cat executive officer</p>
+            <p>Most productive between 2 and 4 a.m. Currently supervising you from this very screen.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene" data-title="Say hi">
+      <div class="scene__box scene__box--contact">
+        <p class="eyebrow"><span class="eyebrow__dot"></span> The lights are still on</p>
+        <h2>Let's make something<br/>worth purring about.</h2>
+        <button class="chip chip--big" data-copy="deirh.mana@gmail.com">
+          deirh.mana@gmail.com <span class="chip__hint">tap to copy</span>
+        </button>
+        <p class="lead lead--small">No forms, no funnels. Copy the address, write like a human, get an answer from one.</p>
+      </div>
+    </section>
+
+    <!-- paw dots -->
+    <nav class="dots" id="dots" aria-label="Scenes"></nav>
+
+    <div class="toast" id="toast" role="status">copied! 🐾</div>
+  </div>
+
+  <script src="night.js"></script>
+</body>
+</html>

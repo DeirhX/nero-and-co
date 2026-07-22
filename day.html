@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nero &amp; Co. — We design websites with a soul</title>
+  <meta name="description" content="Nero & Co. is a playful web design studio. We design websites with a soul — landing pages, e-shops, booking systems, anything. Supervised by Nero, a very serious tuxedo cat." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐈‍⬛%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <header class="nav" id="top">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo" id="logo">
+        <svg class="nav__mark" viewBox="0 0 48 48" aria-hidden="true">
+          <path d="M10 30 L7 10 L20 20 Z" fill="currentColor"/>
+          <path d="M38 30 L41 10 L28 20 Z" fill="currentColor"/>
+          <ellipse cx="24" cy="30" rx="17" ry="15" fill="currentColor"/>
+          <circle cx="17.5" cy="28" r="2.6" fill="var(--cream)"/>
+          <circle cx="30.5" cy="28" r="2.6" fill="var(--cream)"/>
+          <path d="M22 35 L26 35 L24 37.5 Z" fill="var(--accent)"/>
+        </svg>
+        <span>Nero <em>&amp;</em> Co.</span>
+      </a>
+      <nav class="nav__links" aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#team">The team</a>
+        <a href="#process">Process</a>
+      </nav>
+      <a href="#contact" class="btn btn--small">Let's talk</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+      <div class="hero__deco" aria-hidden="true">
+        <span class="paw paw--1">🐾</span>
+        <span class="paw paw--2">🐾</span>
+        <span class="paw paw--3">🐾</span>
+        <svg class="yarn" viewBox="0 0 120 120" aria-hidden="true">
+          <circle cx="60" cy="60" r="42" fill="var(--accent)"/>
+          <path d="M25 45 Q60 20 95 48 M20 65 Q60 40 100 66 M25 84 Q60 60 96 82 M40 100 Q65 78 90 96"
+                stroke="var(--accent-dark)" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <path d="M96 92 Q130 110 112 140" stroke="var(--accent)" stroke-width="5" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+      <div class="hero__inner">
+        <div class="hero__copy reveal">
+          <p class="eyebrow"><span class="eyebrow__dot"></span> Nero &amp; Co. — web design studio</p>
+          <h1>We design websites <br/>with a <span class="squiggle">soul</span>.</h1>
+          <p class="hero__sub">
+            From landing pages to e-shops to full booking systems — we design and build
+            <strong>any kind of website</strong>, and every one leaves the studio with a
+            heartbeat. Handcrafted by one caffeinated human, supervised by Nero,
+            a very serious tuxedo cat.
+          </p>
+          <div class="hero__cta">
+            <a href="#contact" class="btn">Start a project</a>
+            <a href="#work" class="btn btn--ghost">See our work</a>
+          </div>
+          <ul class="hero__stats">
+            <li><strong>9</strong><span>lives of experience</span></li>
+            <li><strong>1</strong><span>supervising cat</span></li>
+            <li><strong>100%</strong><span>handmade code</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__cat">
+          <div class="bubble" id="bubble" role="status">mrrp!</div>
+          <svg id="nero" class="nero" viewBox="0 0 400 430" aria-label="Nero the tuxedo cat. Click him — he might answer.">
+            <!-- tail -->
+            <path class="nero__tail" d="M300 350 Q385 330 372 245 Q366 208 340 200 Q368 215 370 250 Q376 325 298 366 Z"
+                  fill="var(--ink)"/>
+            <circle class="nero__tailtip" cx="341" cy="203" r="13" fill="#fff"/>
+            <!-- body -->
+            <ellipse cx="200" cy="315" rx="112" ry="98" fill="var(--ink)"/>
+            <!-- white bib -->
+            <path d="M200 240 Q252 265 245 340 Q240 400 200 405 Q160 400 155 340 Q148 265 200 240 Z" fill="#fff"/>
+            <!-- front paws -->
+            <ellipse cx="168" cy="400" rx="27" ry="15" fill="#fff"/>
+            <ellipse cx="232" cy="400" rx="27" ry="15" fill="#fff"/>
+            <path d="M160 398 L160 406 M168 400 L168 408 M176 398 L176 406" stroke="var(--paper)" stroke-width="2.4" stroke-linecap="round"/>
+            <path d="M224 398 L224 406 M232 400 L232 408 M240 398 L240 406" stroke="var(--paper)" stroke-width="2.4" stroke-linecap="round"/>
+            <!-- ears -->
+            <path class="nero__ear nero__ear--l" d="M122 108 L96 22 L182 66 Z" fill="var(--ink)"/>
+            <path class="nero__ear nero__ear--r" d="M278 108 L304 22 L218 66 Z" fill="var(--ink)"/>
+            <path d="M126 94 L110 42 L162 70 Z" fill="var(--pink)"/>
+            <path d="M274 94 L290 42 L238 70 Z" fill="var(--pink)"/>
+            <!-- head -->
+            <ellipse cx="200" cy="150" rx="97" ry="88" fill="var(--ink)"/>
+            <!-- white muzzle patch -->
+            <ellipse cx="200" cy="195" rx="50" ry="36" fill="#fff"/>
+            <!-- eyes -->
+            <g class="nero__eye" data-eye>
+              <ellipse cx="158" cy="142" rx="23" ry="25" fill="var(--accent)"/>
+              <g class="nero__pupil" data-pupil>
+                <ellipse cx="158" cy="144" rx="8.5" ry="15" fill="var(--ink)"/>
+                <circle cx="161" cy="137" r="3.4" fill="#fff"/>
+              </g>
+            </g>
+            <g class="nero__eye" data-eye>
+              <ellipse cx="242" cy="142" rx="23" ry="25" fill="var(--accent)"/>
+              <g class="nero__pupil" data-pupil>
+                <ellipse cx="242" cy="144" rx="8.5" ry="15" fill="var(--ink)"/>
+                <circle cx="245" cy="137" r="3.4" fill="#fff"/>
+              </g>
+            </g>
+            <!-- nose + mouth -->
+            <path d="M191 182 L209 182 L200 193 Z" fill="var(--pink)"/>
+            <path d="M200 193 Q200 202 190 204 M200 193 Q200 202 210 204" stroke="var(--ink)" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+            <!-- whiskers -->
+            <g class="nero__whiskers" stroke="#cfc9bd" stroke-width="2.4" stroke-linecap="round">
+              <path d="M156 190 Q112 182 84 168" fill="none"/>
+              <path d="M156 199 Q110 200 80 196" fill="none"/>
+              <path d="M244 190 Q288 182 316 168" fill="none"/>
+              <path d="M244 199 Q290 200 320 196" fill="none"/>
+            </g>
+          </svg>
+          <div class="hero__shadow" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== MARQUEE ========== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>landing pages ✦ e-shops ✦ booking systems ✦ portfolios ✦ restaurants ✦ sports clubs ✦ redesigns ✦ one-pagers ✦ blogs ✦ web apps ✦ </span>
+        <span>landing pages ✦ e-shops ✦ booking systems ✦ portfolios ✦ restaurants ✦ sports clubs ✦ redesigns ✦ one-pagers ✦ blogs ✦ web apps ✦ </span>
+      </div>
+    </div>
+
+    <!-- ========== SERVICES ========== -->
+    <section class="section" id="services">
+      <div class="section__inner">
+        <p class="eyebrow reveal"><span class="eyebrow__dot"></span> What we do</p>
+        <h2 class="reveal">Any kind of web. <span class="squiggle">Really.</span></h2>
+        <p class="section__sub reveal">If it lives in a browser, we can design and build it. Pick a card — or bring us something weirder.</p>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card__icon">🏠</div>
+            <h3>Business &amp; landing pages</h3>
+            <p>A first impression that lands on its feet. Fast, beautiful, and built to turn visitors into customers.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">🛒</div>
+            <h3>E-commerce</h3>
+            <p>Shops that keep selling while you nap. (Nero strongly endorses the napping part.)</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">📅</div>
+            <h3>Booking &amp; reservation systems</h3>
+            <p>Calendars, forms, confirmations — we built a full court-reservation system for a tennis academy.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">🎨</div>
+            <h3>Portfolios &amp; personal sites</h3>
+            <p>Your work, groomed to perfection. Sleek, personal, and unmistakably you.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">🩹</div>
+            <h3>Redesigns &amp; rescues</h3>
+            <p>We adopt old, neglected websites and give them a loving new home. All breeds welcome.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">🫶</div>
+            <h3>Care &amp; maintenance</h3>
+            <p>Feeding, grooming and regular check-ups, so your site stays healthy long after launch.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== WORK ========== -->
+    <section class="section section--dark" id="work">
+      <div class="section__inner">
+        <p class="eyebrow eyebrow--light reveal"><span class="eyebrow__dot"></span> Fresh from the litter</p>
+        <h2 class="reveal">Recent work</h2>
+
+        <div class="work">
+          <a class="work__card reveal" href="https://neride.netlify.app/" target="_blank" rel="noopener">
+            <div class="work__thumb" aria-hidden="true">
+              <span class="work__ball">🎾</span>
+              <span class="work__label">neride.netlify.app</span>
+            </div>
+            <div class="work__body">
+              <h3>Open Tennis Academy — TK Neridé</h3>
+              <p>Complete website for a Prague tennis academy: three venues, training programs, camps — plus a custom online court-reservation system.</p>
+              <span class="work__link">Visit the site ↗</span>
+            </div>
+          </a>
+
+          <div class="work__card work__card--you reveal">
+            <div class="work__thumb work__thumb--dashed" aria-hidden="true">
+              <span class="work__paw">🐾</span>
+            </div>
+            <div class="work__body">
+              <h3>Your project</h3>
+              <p>This spot is reserved. Bakery, band, barbershop, startup — whatever you're building, it belongs here.</p>
+              <a class="work__link" href="#contact">Claim it →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TEAM ========== -->
+    <section class="section" id="team">
+      <div class="section__inner">
+        <p class="eyebrow reveal"><span class="eyebrow__dot"></span> A studio of two</p>
+        <h2 class="reveal">Meet the team</h2>
+
+        <div class="team">
+          <article class="team__card reveal">
+            <div class="team__avatar" aria-hidden="true">☕</div>
+            <h3>The Human</h3>
+            <p class="team__role">Design · Code · Coffee</p>
+            <p>Designs it, builds it, launches it, and answers your emails suspiciously fast. Believes every business deserves a website it can be proud of.</p>
+          </article>
+          <article class="team__card team__card--nero reveal">
+            <div class="team__avatar" aria-hidden="true">🐈‍⬛</div>
+            <h3>Nero</h3>
+            <p class="team__role">Cat Executive Officer</p>
+            <p>Duties include keyboard durability testing, deadline supervision, and enforcing mandatory breaks by sitting on the mouse. Wears a tuxedo to every meeting.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROCESS ========== -->
+    <section class="section section--tint" id="process">
+      <div class="section__inner">
+        <p class="eyebrow reveal"><span class="eyebrow__dot"></span> How it works</p>
+        <h2 class="reveal">Four paws, four steps</h2>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__num">01</span>
+            <h3>Sniff around</h3>
+            <p>We meet, we listen, we ask nosy questions about your goals, your customers and your taste.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">02</span>
+            <h3>Pounce</h3>
+            <p>Design time. You get a visual proposal to react to — we refine it together until it feels right.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">03</span>
+            <h3>Land on its feet</h3>
+            <p>We build it: fast, responsive, and tested on everything from big screens to small phones.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">04</span>
+            <h3>Purr</h3>
+            <p>Launch day! And afterwards we stick around for updates, tweaks and the occasional treat.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact" id="contact">
+      <div class="contact__walker" aria-hidden="true">
+        <span id="walker">🐈‍⬛</span>
+      </div>
+      <div class="contact__inner reveal">
+        <h2>Let's make something<br/>worth purring about.</h2>
+        <p>Tell us about your project — big, small, or still just a whisker of an idea.</p>
+        <a class="btn btn--big" href="mailto:deirh.mana@gmail.com?subject=New%20project%20for%20Nero%20%26%20Co.">
+          deirh.mana@gmail.com
+        </a>
+        <p class="contact__note">Average reply time: faster than a cat hearing a treat bag open.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Nero &amp; Co. — Made with ☕ and 🐾</p>
+    <p class="footer__small">No keyboards were harmed in the making of our websites. Nero tried.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
