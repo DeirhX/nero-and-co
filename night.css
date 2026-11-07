@@ -188,6 +188,12 @@ h3 { font-weight: 600; }
 .feature__card h3 { font-size: 1.15rem; margin-bottom: 0.3rem; }
 .feature__card p { font-size: 0.92rem; color: var(--muted); margin-bottom: 0.7rem; }
 .feature__card--slot p { margin-bottom: 0; }
+.scene__box--work .feature { gap: 0.7rem; margin-top: 1.2rem; }
+.scene__box--work .feature__card { padding: 0.9rem 1.1rem; gap: 0.9rem; }
+.scene__box--work .feature__card p { margin-bottom: 0.5rem; }
+.scene__box--work .feature__card h3 { font-size: 1.05rem; }
+.scene__box--work .feature__card p { font-size: 0.84rem; line-height: 1.5; }
+.scene__box--work .feature__card .chip { font-size: 0.78rem; }
 
 /* ---------- scene 3: crew ---------- */
 
@@ -512,20 +518,38 @@ h3 { font-weight: 600; }
   .stage[data-scene="0"] { --cat-x: 0vw; --cat-y: 34vh; --cat-s: 0.5; }
   .stage[data-scene="1"] { --cat-x: 30vw; --cat-y: 40vh; --cat-s: 0.4; }
   .stage[data-scene="2"] { --cat-x: -32vw; --cat-y: 43vh; --cat-s: 0.32; }
-  .stage[data-scene="3"] { --cat-x: 30vw; --cat-y: 43vh; --cat-s: 0.45; }
+  .stage[data-scene="3"] { --cat-x: 36vw; --cat-y: 47vh; --cat-s: 0.45; }
   .stage[data-scene="4"] { --cat-x: 30vw; --cat-y: 42vh; --cat-s: 0.45; }
   .scene__box { margin-left: 0; }
   .scene { padding-top: 5rem; padding-right: 3.2rem; }
   h1 { font-size: clamp(1.9rem, 8vw, 2.6rem); }
   .brand__tag { display: none; }
+  .scene__box--work .feature__card--slot { display: none; }
+  .scene__box--work .feature__card { gap: 0.8rem; padding: 0.9rem 1rem; }
+  .scene__box--work .feature__emoji { font-size: 1.5rem; }
+  .scene__box--work .feature__card p { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 0.4rem; }
   .crew { grid-template-columns: 1fr; gap: 0.8rem; }
   .crew__card { padding: 1.1rem 1.2rem; }
   .dots { right: 14px; }
 }
 
+@media (max-width: 640px) {
+  .car-track { height: 405px; }
+  .b-title { font-size: 1.15rem; }
+}
+
+@media (max-height: 820px) {
+  .scene__box--work .feature__card--slot { display: none; }
+}
+
 @media (max-height: 640px) {
   .hint { display: none; }
   .mini p { display: none; }
+  .show__drag { display: none; }
+  .scene__box--work .feature__card p { display: none; }
+  .car-track { height: 270px; }
+  .browser__page { min-height: 0; }
+  .scene__box--show h2 { font-size: 1.5rem; }
 }
 
 /* ---------- reduced motion ---------- */

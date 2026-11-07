@@ -308,6 +308,9 @@ a { color: inherit; }
   background: rgba(22, 22, 26, 0.75); color: var(--cream);
   font-size: 0.8rem; padding: 0.3em 0.9em; border-radius: 999px;
 }
+.work__thumb--brigada { background: linear-gradient(135deg, #7a3b0c, #c2691b 55%, #e8963a); }
+.work__thumb--pomsta { background: linear-gradient(135deg, #1b1030, #3d1f5e 55%, #6b2d5c); }
+.work__emoji { font-size: 3.8rem; animation: float 5s ease-in-out infinite; }
 .work__thumb--dashed {
   background: transparent; border-bottom: none; margin: 14px 14px 0;
   border: 2.5px dashed rgba(255, 249, 240, 0.35); border-radius: 16px; height: 196px;
