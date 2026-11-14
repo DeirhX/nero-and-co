@@ -412,6 +412,7 @@ h3 { font-weight: 600; }
   box-shadow: 0 0 22px rgba(255, 197, 61, 0.25);
 }
 .chip:active { transform: translateY(1px); }
+a.chip { text-decoration: none; }
 .chip__hint {
   font-size: 0.68rem; font-weight: 500; text-transform: uppercase;
   letter-spacing: 0.12em; color: var(--muted);

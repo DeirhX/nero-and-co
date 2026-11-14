@@ -5,7 +5,7 @@ Pure HTML/CSS/JS — no build step, no dependencies.
 
 Two editions:
 
-- **After Dark** (`index.html`) — the main site. One fixed screen, zero scrolling, zero hyperlinks;
+- **After Dark** (`index.html`) — the main site. One fixed screen with scene navigation and project links.
   six scenes recompose live around Nero (wheel / swipe / arrow keys / paw dots),
   email & URL are copy-to-clipboard chips, fireflies included.
   Scene 3 is **the Shapeshifter**: a 3D carousel of seven styled browser windows
@@ -48,7 +48,7 @@ netlify deploy --prod --dir .
 
 Both editions showcase the same three projects: Open Tennis Academy / TK Neridé
 (`neride.bokovka.cz`), Moje první brigáda (`mojeprvnibrigada.cz`) and Moje první pomsta
-(`mojeprvnipomsta.cz`). In After Dark they are copy chips in scene 4 (`.feature__card`s in
+(`mojeprvnipomsta.cz`). In After Dark they are links in scene 4 (`.feature__card`s in
 `index.html`); in Day they are link cards in `#work` (`.work__card`s in `day.html`).
 
 ## Editing
